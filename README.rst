@@ -4,7 +4,7 @@ phPy
 phPy is a simple way to call legacy PHP functions from Python.
 
 
-.. code-block:: PHP
+.. code-block:: php
 
     function LegacyPHPFunction($arg1, $arg2, $arg3) {
         //... original codes...
