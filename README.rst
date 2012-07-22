@@ -21,6 +21,7 @@ phPy is a simple way to call legacy PHP functions from Python.
 
     from phpy import PHP
 
+    #php_file_path = the path of your legacy php file...
     php = PHP(php_file_path)
     result_raw = php.get_raw('LegacyPHPFunction', ['argument1',u'argument2', 3]) # get a return value as a raw string
     result_dict = php.get_dict('LegacyPHPFunction', ['argument1',u'argument2', 3]) # get return values as a python dictionary
