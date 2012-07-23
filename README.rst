@@ -1,9 +1,26 @@
 phPy
-===============
+====
 
 phPy is a simple way to call legacy PHP functions from Python.
 
 
+Install
+=======
+You can install the package from PyPI
+
+    $ pip install phpy
+
+
+Requirements
+============
+phPy uses php5-cli. You have to install the php5-cli package.
+
+    $ apt-get install php5-cli
+    $ yum install php5-cli
+
+
+Example
+=======
 .. code-block:: php
 
     function LegacyPHPFunction($arg1, $arg2, $arg3) {
