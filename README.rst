@@ -13,10 +13,10 @@ You can install the package from PyPI::
 
 Requirements
 ============
-phPy uses php5-cli. You have to install the php5-cli package.::
+phPy uses php5-cli. You have to install the php5-cli package by using apt-get or yum. ::
 
-    $ apt-get install php5-cli
-    $ yum install php5-cli
+    $ apt-get install php5-cli 
+    $ yum install php5-cli 
 
 
 Example
