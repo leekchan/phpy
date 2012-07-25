@@ -4,8 +4,8 @@ phPy
 phPy is a simple way to call legacy PHP functions from Python.
 
 
-Install
-=======
+Installation
+=============
 You can install the package from PyPI::
 
     $ pip install phpy
