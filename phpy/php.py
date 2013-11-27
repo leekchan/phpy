@@ -1,5 +1,8 @@
+try:
+    import simplejson as json
+except ImportError:
+    import json
 from subprocess import Popen, PIPE
-import json
 from exceptions import *
 
 
