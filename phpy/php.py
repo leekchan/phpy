@@ -31,7 +31,6 @@ class PHP:
         print >>p.stdin, 'include \'%s\';' % self.file_path
         print >>p.stdin, '%s(%s);' % (function_name,
                                     self.__join_arguments(arguments))
-        print >>p.stdin, ' php?>'
         p.stdin.close()
         result = p.stdout.read()
         if result.find('include(): Failed opening') > 0:
