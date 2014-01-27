@@ -44,3 +44,11 @@ Example
     result_raw = php.get_raw('LegacyPHPFunction', ['argument1',u'argument2', 3]) # get a return value as a raw string
     result_dict = php.get_dict('LegacyPHPFunction', ['argument1',u'argument2', 3]) # get return values as a python dictionary
     print result_dict['foo']
+    
+
+Continuous Integration (Travis CI)
+=======
+https://travis-ci.org/leekchan/phpy/
+
+Build Status
+[![Build Status](https://travis-ci.org/leekchan/phpy.png?branch=master)](https://travis-ci.org/leekchan/phpy)
