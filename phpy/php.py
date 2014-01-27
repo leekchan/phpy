@@ -12,8 +12,12 @@ class PHP:
 
     def __quote(self, arguments):
         for arg in arguments:
-            if type(arg) in (str, unicode):
+            if isinstance(arg, basestring):
+                if isinstance(arg, unicode):
+                    arg = arg.encode('utf-8')
                 yield '\'%s\'' % arg
+            elif arg is None:
+                yield 'NULL'
             else:
                 yield str(arg)
 
