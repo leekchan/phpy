@@ -50,5 +50,7 @@ Continuous Integration (Travis CI)
 =======
 https://travis-ci.org/leekchan/phpy/
 
-Build Status
-[![Build Status](https://travis-ci.org/leekchan/phpy.png?branch=master)](https://travis-ci.org/leekchan/phpy)
+.. image:: https://travis-ci.org/leekchan/phpy.png?branch=master
+  :alt: Build Status
+  :target: https://travis-ci.org/leekchan/phpy/
+    
