@@ -19,4 +19,4 @@ class PHPWarning(Exception):
 class InvalidType(Exception):
     """ Invalid type. """
     def __str__(self):
-        return 'Ony list type is permitted.'
+        return 'Only list type is permitted.'
