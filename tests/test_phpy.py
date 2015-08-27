@@ -12,6 +12,7 @@ test_php_path = os.path.join(os.path.dirname(__file__), 'test.php')
     (0.0, 1.1, 2.2),
     ('foo', 'bar', 'baz'),
     (u'가', u'나', u'다'),
+    ("'test' is important", "\\bar", "\\'baz"),
     (None, None, None),
 ])
 def test_get_dict(foo, bar, baz):
