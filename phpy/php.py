@@ -10,12 +10,15 @@ class PHP:
     def __init__(self, file_path):
         self.file_path = file_path
 
+    def __escape(self, string):
+        return string.replace('\\', '\\\\').replace("'", "\\'")
+
     def __quote(self, arguments):
         for arg in arguments:
             if isinstance(arg, basestring):
                 if isinstance(arg, unicode):
                     arg = arg.encode('utf-8')
-                yield '\'%s\'' % arg
+                yield '\'%s\'' % self.__escape(arg)
             elif arg is None:
                 yield 'NULL'
             else:
@@ -32,7 +35,7 @@ class PHP:
             raise InvalidType
         p = Popen('php', stdin=PIPE, stdout=PIPE, stderr=PIPE)
         print >>p.stdin, '<?php '
-        print >>p.stdin, 'include \'%s\';' % self.file_path
+        print >>p.stdin, 'include \'%s\';' % self.__escape(self.file_path)
         print >>p.stdin, '%s(%s);' % (function_name,
                                     self.__join_arguments(arguments))
         p.stdin.close()
